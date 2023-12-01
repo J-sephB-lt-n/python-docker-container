@@ -1,0 +1,7 @@
+# These files will NOT be copied into the Docker container #
+.dockerignore
+Dockerfile
+.gitignore
+LICENSE
+Makefile
+README.md
