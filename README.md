@@ -14,3 +14,12 @@ GCP_REGION="e.g. europe-west2" \
 GCP_ARTIFACT_REG_REPO_NAME="the name of the repository to save the image to on google cloud artifact registry" \
 CONTAINER_NAME="choose whatever name you like for your container here"
 ```
+
+You can build and run the container locally like this:
+
+```bash
+docker build --tag python_dev .
+docker run -it --name run_python_dev python_dev bash
+docker stop run_python_dev
+docker rm run_python_dev
+```
